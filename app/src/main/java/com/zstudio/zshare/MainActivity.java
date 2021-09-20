@@ -60,15 +60,11 @@ import static android.Manifest.permission.WRITE_EXTERNAL_STORAGE;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    //data
-    //https://www.googleapis.com/youtube/v3/videos?part=statistics&id=aOXAtnb-grk&key=AIzaSyBpXWuam_VGuO7MyPlUV4rKEWTb5fah5dY
-    //http://img.youtube.com/vi/<insert-youtube-video-id-here>/mqdefault.jpg
-    //http://img.youtube.com/vi/<insert-youtube-video-id-here>/maxresdefault.jpg
-
+   
 
     private String videoId;
     private String TAG = "MainActivity";
-    private String api_key = "AIzaSyBpXWuam_VGuO7MyPlUV4rKEWTb5fah5dY";
+    private String api_key = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
     private Boolean given = false;
     private TextView likes;
     private TextView dislikes;
@@ -164,7 +160,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     //load data from google api for likes dislikes comments and views
     private void load_data() {
 
-        String url = "https://www.googleapis.com/youtube/v3/videos?part=statistics&id=" + videoId + "&key=AIzaSyBpXWuam_VGuO7MyPlUV4rKEWTb5fah5dY";
+        String url = "https://www.googleapis.com/youtube/v3/videos?part=statistics&id=" + videoId + "&key=XXXXXXXXXXXXXXXXXXXXXXXXXX";
         final String thumbnail_url = "http://img.youtube.com/vi/" + videoId + "/maxresdefault.jpg";
 
         //request_queue
