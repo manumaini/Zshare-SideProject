@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".shareActivity">
+
+
+    <RelativeLayout
+        android:padding="16dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_above="@id/layout_above"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_social_media"
+            android:layout_marginTop="36dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_marginBottom="-20dp"
+        android:id="@+id/layout_above"
+        android:layout_above="@id/layout_below"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="56dp"
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+
+        <Button
+            android:id="@+id/snapchat"
+            android:elevation="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/ic_snapchat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <Button
+            android:id="@+id/whatsapp"
+            android:elevation="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/ic_whatsapp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_below"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="56dp"
+        android:weightSum="2"
+        android:layout_marginBottom="16dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+
+        <Button
+            android:id="@+id/facebook"
+            android:elevation="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/ic_facebook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <Button
+            android:id="@+id/instagram"
+            android:elevation="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/ic_instagram"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+</RelativeLayout>
